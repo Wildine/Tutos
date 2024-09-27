@@ -1,8 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     z-index: 100;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header {
@@ -34,6 +35,10 @@ header {
     margin-left: 5px;
 }
 
+.top-menu {
+    display: none;
+}
+
 .links {
     display: flex;
 }
@@ -60,6 +65,10 @@ header {
     border-radius: 4px;
 }
 
+.links li a ion-icon {
+    padding-right: 3px;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -78,7 +87,9 @@ header {
 
 .dropdown-content a {
     padding: 10px;
-    display: block;
+    /* display: block; */
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: white;
 }
@@ -89,4 +100,97 @@ header {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.dropdown-content ion-icon {
+    padding-right: 8px;
+}
+
+/* .menu {
+    width: 100px;
+    height: 40px;
+    color: #fff;
+} */
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 920px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    /* nav {
+        padding: 0;
+    } */
+
+    .top-menu {
+        width: 100%;
+        color: #fff;
+        font-size: 50px;
+        font-weight: 600;
+        text-align: center;
+        padding: 10px 20px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, .7);
+        position: absolute;
+        top: 30px;
+        display: block;
+    }
+
+    
+
+    .links {
+        width: 200px;
+        height: 100vh;
+        margin-left: -100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2C3E50;
+        /* border: 1px solid #000; */
+        backdrop-filter: blur(8px);
+        border-radius: 0 20px 20px 0px;
+        /* box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); */
+        box-shadow: 0px 8px 16px rgb(255, 255, 255);
+        /* background: rgba(148, 117, 117, 0.24); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .9s ease;
+    }
+
+    .links.mobile-menu {
+        margin-left: 0;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links li {
+        margin: 15px 0;
+        font-size: 1.2em;
+    }
+
+    .dropdown ul {
+        background: none;
+        box-shadow: none;
+    }
+
+    .dropdown ul li {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        width: 100px;
+        height: 40px;
+        color: #fff;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+    }
 }
