@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site Web</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt="">Wildine<span class="dev">Dev</span></a>
+            <nav>
+                <ul class="links">
+                    <li><a href="index.html"><ion-icon name="home"></ion-icon>Home</a></li>
+                    <li><a href="#about"><ion-icon name="help-circle"></ion-icon>About</a></li>
+                    <li><a href="#service"><ion-icon name="settings"></ion-icon>Service</a></li>
+                    <!-- <li class="dropdown">
+                        <a href="#account"><ion-icon name="people-circle"></ion-icon>Account</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#"><ion-icon name="add-circle"></ion-icon>Sign Up</a></li>
+                            <li><a href="#"><ion-icon name="log-in"></ion-icon>Sign In</a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="#projects"><ion-icon name="rocket"></ion-icon>Projects</a></li>
+                    <li><a href="#contact"><ion-icon name="call"></ion-icon>Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <!-- Section d'Introduction  -->
+    <section>
+        <div class="welcome">
+            <img src="img/luffy-gear-5.jpg" alt="">
+            <div class="text">
+                <h1>Bienvenue sur mon site !</h1>
+                <p>Je m'appelle Wildine Dev, développeur fullstack junior spécialisé dans la création de sites web modernes et performants. Mon objectif de réalisation est de vous accompagner dans la réalisation de votre projet numérique, du développement à la mise en ligne.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section a propos  -->
+    <section class="section" id="about">
+        <div class="about">
+            <div class="content-about">
+                <h1>About</h1>
+                <p>Bonjour, je suis Wildine Dev, un développeur full stack junior passionné par la création de solutions numériques innovantes. Actuellement étudiant en Télécommunications et Réseaux avec une spécialisation en Cybersécurité et DevOps, je m'efforce d'allier mes compétences en développement web avec mes connaissances techniques pour offrir des expériences utilisateur optimales.</p>
+                <div class="hidden-content" id="hidden">
+                    <p>Avec une solide maîtrise des principes fondamentaux de la gestion des réseaux, ainsi qu'une bonne compréhension des technologies de télécommunications, je suis déterminé à aider les entreprises à se démarquer dans le monde numérique. Mon objectif est de créer des sites web qui non seulement répondent aux besoins de mes clients, mais qui leur permettent également d'atteindre leurs objectifs commerciaux.</p>
+                    <p>Si vous cherchez à développer votre présence en ligne ou à améliorer votre site existant, n'hésitez pas à me contacter !</p>
+                </div>
+                <button class="button" id="button">Voir Plus</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section d'explication -->
+    <section class="section">
+        <div class="exp">
+            <div class="why">
+                <h1>Pourquoi avoir un site web ?</h1>
+                <p class="sous-titre">Un site web est essentiel pour votre activité car il offre</p>
+                <ul class="icons">
+                    <li><ion-icon class="globe" name="globe"></ion-icon><b><i>Visibilité accrue</i></b> <p>Un site web permet à votre entreprise d'être trouvée facilement par vos clients potentiels, qu'ils soient locaux ou à l'international.</p></li>
+                    <li><ion-icon class="shield" name="shield-checkmark"></ion-icon><b><i>Crédibilité renforcée</i></b> <p>Disposer d'un site professionnel montre que vous prenez votre activité au sérieux et que vous êtes un acteur fiable dans votre domaine.</p></li>
+                    <li><ion-icon class="time" name="time"></ion-icon><b><i>Accessibilité 24h/24 et 7j/7</i></b> <p>Vos clients peuvent consulter vos informations, acheter vos produits, ou vous contacter à tout moment, même en dehors des heures de bureau.</p></li>
+                    <li><ion-icon class="megaphone" name="megaphone"></ion-icon><b><i>Marketing et communication efficaces</i></b> <p>Avec un site, vous pouvez partager vos actualités, promotions, et informations importantes de manière instantanée et efficace.</p></li>
+                    <li><ion-icon class="settings" name="settings"></ion-icon><b><i>Personnalisation et contrôle</i></b> <p>Contrairement aux réseaux sociaux, un site web vous permet de contrôler totalement l'image de votre marque, son apparence et son message.</p></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section de services -->
+    <section class="section" id="service">
+        <div class="service">
+            <div class="serv">
+                <h1>Mes services</h1>
+                <p class="sous-titre">Je propose une gamme de services adaptés à vos besoins</p>
+                <ul class="icons">
+                    <li><ion-icon class="briefcase" name="briefcase"></ion-icon><b><i>Création de sites vitrines</i></b> <p>Parfait pour présenter votre activité ou vos services.</p></li>
+                    <li><ion-icon class="cart" name="cart"></ion-icon><b><i>Développement d'e-commerce</i></b> <p>Lancez votre boutique en ligne et commencez à vendre vos produits rapidement.</p></li>
+                    <li><ion-icon class="trending" name="trending-up"></ion-icon><b><i>Optimisation pour moteurs de recherche </i></b> <p>Améliorez la visibilité de votre site dans les moteurs de recherche pour attirer plus de visiteurs.</p></li>
+                    <li><ion-icon class="sync" name="sync"></ion-icon><b><i>Maintenance et mise à jour</i></b> <p>Je vous accompagne pour garder votre site à jour, sécurisé, et fonctionnel.</p></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section des Projet -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="project">
+                <h1>Mes projets</h1>
+                <div class="content-project">
+                    <div class="project-content">
+                        <h2>Administration Systèmes et Virtualisation</h2>
+                        <div class="resultat">
+                            <img src="admistration-systeme.png" alt="Aperçu du projet 2">
+                            <p>Gestion et optimisation des ressources informatiques</p>
+                            <div class="buttons">
+                                <button class="vue" type="submit"><a href="lien-vers-le-projet">Voir le projet</a></button>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <h2>Automatisation des Tâches avec Ansible</h2>
+                        <div class="resultat">
+                            <img src="ansible.png" alt="Aperçu du projet 2">
+                            <p>Optimisation des déployés et de la gestion des configurations</p>
+                            <div class="buttons">
+                                <button class="vue" type="submit"><a href="lien-vers-le-projet">Voir le projet</a></button>
+                                
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="project-content">
+                        <h2>Développement Web Dynamique (PHP MySQL)</h2>
+                        <div class="resultat">
+                            <img src="php-mysql.png" alt="Aperçu du projet 2">
+                            <p>Création d'applications web interactives et dynamiques</p>
+                            <div class="buttons">
+                                <button class="vue" type="submit"><a href="lien-vers-le-projet">Voir le projet</a></button>
+                                <button class="code" type="submit"><a href="lien-vers-le-code">Voir le code</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <h2>Infrastructures de Sécurité Informatiques</h2>
+                        <div class="resultat">
+                            <img src="infrastructure.png" alt="Aperçu du projet 2">
+                            <p>Mise en œuvre et gestion des systèmes de sécurité</p>
+                            <!-- <p><b>Technologies :</b> Python, Docker, MySQL, Wireshark</p> -->
+
+                            <div class="buttons">
+                                <button class="vue" type="submit"><a href="lien-vers-le-projet">Voir le projet</a></button>
+                                <!-- <button class="code" type="submit"><a href="lien-vers-le-code">Voir le code</a></button> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content">
+                        <h2>WebRTC avec Asterisk</h2>
+                        <div class="resultat">
+                            <img src="webrtc-asterisk.png" alt="Aperçu du projet 2">
+                            <!-- <p>Mise en œuvre d'une solution de communication en temps réel avec WebRTC et Asterisk pour des interactions utilisateur optimisées.</p> -->
+                            <!-- <p>Développement et déploiement d'une solution intégrée de communication en temps réel, optimisant les interactions utilisateurs via WebRTC et Asterisk.</p> -->
+                            <!-- <p><b>Technologies :</b>Asterisk, WebRTC, HTML/CSS/JavaScript</p> -->
+                            <p>Mise en place d'un système de communication en temps réel</p>
+                            <div class="buttons">
+                                <button class="vue" type="submit"><a href="lien-vers-le-projet">Voir le projet</a></button>
+                                <!-- <button class="code" type="submit"><a href="lien-vers-le-code">Voir le code</a></button> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content plus">
+                        <div class="resultat">
+                            <div class="add">
+                            <p>Voir mes autres projets</p>
+                                <a href="#"><ion-icon name="add-circle"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section progress langage  -->
+    <section class="section">
+        <div class="skills">
+            <div class="container">
+                <h1>Mes Compétences</h1>
+                <div class="langage">
+                    <h2>Langages</h2>
+                    <div class="skill">
+                        <span class="skill-name"><img src="html.png" alt="">HTML</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percentage="90">90%</div>
+                        </div>
+                    </div>
+                
+                    <div class="skill">
+                        <span class="skill-name"><img src="css.png" alt="">CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percentage="80">80%</div>
+                        </div>
+                    </div>
+                
+                    <div class="skill">
+                        <span class="skill-name"><img src="js.png" alt="">JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percentage="20">20%</div>
+                        </div>
+                    </div>
+                
+                    <div class="skill">
+                        <span class="skill-name"><img src="php.png" alt="">PHP</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percentage="40">40%</div>
+                        </div>
+                    </div>
+                
+                    <div class="skill">
+                        <span class="skill-name"><img src="sql.png" alt="">SQL</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percentage="80">80%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="langage">
+                    <h2>Frameworks</h2>
+                    <div class="skill">
+                        <span class="skill-name"><img src="angular.png" alt="">Angular</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percentage="10">10%</div>
+                        </div>
+                    </div>
+                
+                    <div class="skill">
+                        <span class="skill-name"><img src="bootstrap.png" alt="">Bootstrap</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percentage="30">30%</div>
+                        </div>
+                    </div>
+                
+                    <div class="skill">
+                        <span class="skill-name"><img src="ionic.png" alt="">Ionic</span>
+                        <div class="progress-bar">
+                            <div class="progress" data-percentage="50">50%</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="langage">
+                    <h2>Technologies et outils</h2>
+                    <div class="outils">
+                        <div class="flex">
+                            <div class="img">
+                                <img src="vscode.png" alt="">
+                                <span class="skill-name">Vs code</span>
+                            </div>
+                        </div>
+                    
+                        <div class="flex">
+                            <div class="img">
+                                <img src="sublimetext.png" alt="">
+                                <span class="skill-name">Sublime text</span>
+                            </div>
+                        </div>
+                    
+                        <div class="flex">
+                            <div class="img">
+                                <img src="IntelliJ.png" alt="">
+                                <span class="skill-name">Intellij idea</span>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="img">
+                                <img src="docker.png" alt="">
+                                <span class="skill-name">Docker</span>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="img">
+                                <img src="github.png" alt="">
+                                <span class="skill-name">Docker</span>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="img">
+                                <img src="gitlab.png" alt="">
+                                <span class="skill-name">Gitlab</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- <div class="skill">
+                        <span class="skill-name">PHP</span>
+                        <div class="img">
+                            <img src="" alt="">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- Section de contact -->
+    <section class="section" id="contact">
+        <div class="contact">
+            <div class="content-contact">
+                <form action="#">
+                    <div class="place">
+                        <!-- <h2>Me contacter</h2> -->
+                        <img src="img/gear5-luffy.jpg" alt="">
+                        
+                        <div class="icon">
+                            <h2>Suivez-moi</h2>
+                            <div class="social-links">
+                                <a href="#" class="fb"><ion-icon name="logo-facebook"></ion-icon></a>
+                                <a href="#" class="inst"><ion-icon name="logo-instagram"></ion-icon></a>
+                                <a href="#" class="tw"><ion-icon name="logo-twitter"></ion-icon></a>
+                                <a href="#" class="tik"><ion-icon name="logo-tiktok"></ion-icon></a>
+                                <a href="#" class="lin"><ion-icon name="logo-linkedin"></ion-icon></a>
+                                <a href="#" class="git"><ion-icon name="logo-github"></ion-icon></a>
+                            </div>                            
+                        </div>
+                    </div>
+
+                    <div class="inputs">
+                        <h2>Contactez-moi</h2>
+                        <div class="input">
+                            <input type="text" placeholder="Nom complet" required><ion-icon name="person-circle"></ion-icon>
+                        </div>
+
+                        <div class="input">
+                            <input type="email" placeholder="Adresse e-mail" required><ion-icon name="mail"></ion-icon>
+                        </div>
+
+                        <div class="input">
+                            <input type="text" placeholder="Raison du contact" required><ion-icon name="help-circle"></ion-icon>
+                        </div>
+
+                        <div class="input">
+                            <textarea name="#" id="#" placeholder="Message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="button">Soumettre</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer  -->
+    <footer>
+        <div class="footer">
+            <p>Copyright &copy; 2024 Wildine Dev | Tous droits réservés.</p>
+        </div>
+    </footer>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

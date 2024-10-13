@@ -1,0 +1,12 @@
+{
+    "cSpell.words": [
+        "Wildine"
+    ],
+    "liveServer.settings.port": 5501,
+    "editor.hover.enabled": false,
+
+    "workbench.colorCustomizations": {
+        "editorIndentGuide.activeBackground": "#4A90E2",
+        "editorIndentGuide.background": "#D1D5DB"
+    }
+}

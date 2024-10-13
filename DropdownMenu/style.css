@@ -87,7 +87,6 @@ header {
 
 .dropdown-content a {
     padding: 10px;
-    /* display: block; */
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -106,12 +105,6 @@ header {
     padding-right: 8px;
 }
 
-/* .menu {
-    width: 100px;
-    height: 40px;
-    color: #fff;
-} */
-
 .menu {
     display: none;
 }
@@ -120,10 +113,6 @@ header {
     header {
         padding: 10px 20px;
     }
-
-    /* nav {
-        padding: 0;
-    } */
 
     .top-menu {
         width: 100%;
@@ -138,8 +127,6 @@ header {
         display: block;
     }
 
-    
-
     .links {
         width: 200px;
         height: 100vh;
@@ -148,15 +135,13 @@ header {
         top: 0;
         left: 0;
         background: #2C3E50;
-        /* border: 1px solid #000; */
         backdrop-filter: blur(8px);
         border-radius: 0 20px 20px 0px;
-        /* box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); */
         box-shadow: 0px 8px 16px rgb(255, 255, 255);
-        /* background: rgba(148, 117, 117, 0.24); */
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         transition: all .9s ease;
     }
 
@@ -164,11 +149,10 @@ header {
         margin-left: 0;
     }
 
-    .links {
+    /* .links {
         display: flex;
-        flex-direction: column;
         align-items: center;
-    }
+    } */
 
     .links li {
         margin: 15px 0;

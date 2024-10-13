@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Création d'une barre de navigation avec un menu déroulant</title>
 </head>
 <body>
     <header>
@@ -14,7 +14,13 @@
                     <li><a href="#home"><ion-icon name="home"></ion-icon>Home</a></li>
                     <li><a href="#about"><ion-icon name="help-circle"></ion-icon>About</a></li>
                     <li><a href="#service"><ion-icon name="settings"></ion-icon>Service</a></li>
-                    <li><a href="#account"><ion-icon name="person-circle"></ion-icon>Account</a></li>
+                    <li class="dropdown">
+                        <a href="#account"><ion-icon name="people-circle-outline"></ion-icon>Account</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#signup">Sign Up</a></li>
+                            <li><a href="#signin">Sign In</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#contact"><ion-icon name="call"></ion-icon>Contact</a></li>
                 </ul>
             </nav>

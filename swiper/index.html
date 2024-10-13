@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Swiper</title>
+</head>
+
+<body>
+<!-- Swiper -->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="img/gear5-luffy.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="img/gear5.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="img/luffy-gear-5.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="img/goku-ui.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="img/goku-ui.png" alt=""></div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0e3c78;
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #ffffff;
+    color: #0e3c78;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.dish {
+    margin-bottom: 20px;
+}
+
+.dish img {
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="number"],
+input[type="submit"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #0e3c78;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #0e3c78;
+}
+
+footer {
+    background-color: #0e3c78;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

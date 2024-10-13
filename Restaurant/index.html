@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nom du Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo du restaurant">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#reservations">Réservations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section d'accueil -->
+    <section id="home">
+        <h1>Bienvenue au Nom du Restaurant</h1>
+        <p>Découvrez notre délicieuse cuisine et notre ambiance chaleureuse.</p>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu">
+        <h2>Notre Menu</h2>
+        <div class="menu-category">
+            <h3>Entrées</h3>
+            <div class="dish">
+                <img src="img/home.png" alt="Plat 1">
+                <h4>Nom du Plat 1</h4>
+                <p>Description du plat 1</p>
+                <p>Prix : 10€</p>
+            </div>
+            <div class="dish">
+                <img src="img/serve.png" alt="Plat 2">
+                <h4>Nom du Plat 2</h4>
+                <p>Description du plat 2</p>
+                <p>Prix : 12€</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <p>Notre restaurant a été fondé pour offrir une expérience culinaire unique.</p>
+    </section>
+
+    <!-- Réservations -->
+    <section id="reservations">
+        <h2>Réservations</h2>
+        <form action="#" method="post">
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Heure :</label>
+            <input type="time" id="time" name="time" required>
+            <label for="people">Nombre de personnes :</label>
+            <input type="number" id="people" name="people" required>
+            <input type="submit" value="Réserver">
+        </form>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Adresse : 123 Rue de la Gastronomie, Ville</p>
+        <p>Téléphone : 01 23 45 67 89</p>
+        <p>Email : contact@restaurant.com</p>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 Nom du Restaurant. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/script.js"></script> <!-- Script JavaScript facultatif -->
+</body>
+</html>

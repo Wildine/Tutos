@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Personnage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #2C3E50;
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Détails du Personnage</h1>
+    <div id="characterDetails"></div>
+
+    <script>
+        const characterDetails = document.getElementById('characterDetails');
+        const character = JSON.parse(localStorage.getItem('selectedCharacter'));
+
+        if (character) {
+            characterDetails.innerHTML = `
+                <h2>${character.name}</h2>
+                <img src="${character.images.jpg.image_url}" alt="${character.name}" />
+                <p>${character.about || 'Pas de description disponible.'}</p>
+            `;
+        } else {
+            characterDetails.innerHTML = '<p>Aucun personnage sélectionné.</p>';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Création d'une barre de navigation avec un menu déroulant responsive</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt="">Wildine <span class="dev">Dev</span></a>
+            <nav>
+                <ul class="links">
+                    <li><a href="#home"><ion-icon name="home"></ion-icon>Accueil</a></li>
+                    <li><a href="#about"><ion-icon name="help-circle"></ion-icon>A propos</a></li>
+                    <li><a href="#service"><ion-icon name="settings"></ion-icon>Service</a></li>
+                    <li class="dropdown">
+                        <a href="#account"><ion-icon name="people-circle-outline"></ion-icon>Compte</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#signup"><ion-icon name="add-circle"></ion-icon>Sign Up</a></li>
+                            <li><a href="#signin"><ion-icon name="enter"></ion-icon>Sign In</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact"><ion-icon name="call"></ion-icon>Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <section id="main">
+        <div class="main">
+            <img src="img/gear5-luffy.jpg" alt="">
+            <div class="content-main">
+                <h1>Bienvenue sur notre site</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores earum tempore hic quos amet quia rem dolorum, quam similique aliquid sed! Cumque soluta non architecto commodi unde, expedita nesciunt numquam.
+                Veniam at voluptates obcaecati provident ullam suscipit quidem possimus modi, a perspiciatis praesentium assumenda expedita porro! Eius placeat obcaecati saepe tempora ad et repellendus enim eaque, sequi suscipit culpa doloremque!
+                Rem illo error repellat dolores officia molestias nisi nam eveniet omnis est laudantium in itaque, fugiat quaerat, perspiciatis fuga consectetur aspernatur laborum delectus veniam quibusdam ipsa? Nihil eius inventore repellat!</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="body">
+        <!-- Section Dragon Ball  -->
+        <div class="swiper mySwiper">
+            <h1>Dragon Ball Super</h1>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/dragonball/goku-ui.png" alt="">
+                        <h2>Goku (Ultra Instinct)</h2>
+                        <div class="description">
+                            <p>Goku, en maîtrisant l'Ultra Instinct, dépasse les limites de la conscience humaine, lui permettant d'esquiver et d'attaquer de façon instinctive avec une vitesse et une précision incroyables. Dans cet état, il atteint un niveau de puissance inégalé dans ses combats contre des ennemis divins.</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                        </ul>
+                        <div class="commentaire">
+                            <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                            <button type="submit" class="button">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/dragonball/vegeta.png" alt="">
+                        <h2>Vegeta (Ultra Ego)</h2>
+                        <div class="description">
+                            <p>Vegeta, avec l'Ultra Ego, tire sa puissance de sa nature saiyan, augmentant sa force chaque fois qu'il subit des dégâts. Ce mode le rend redoutable, car il repousse ses limites tout en exploitant une rage qui augmente constamment sa puissance.</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                        </ul>
+                        <div class="commentaire">
+                            <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                            <button type="submit" class="button">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/dragonball/gohan.png" alt="">
+                        <h2>Gohan (Beast Mode)</h2>
+                        <div class="description">
+                            <p>Gohan accède au Beast Mode, libérant son véritable potentiel endormi, surpassant même les formes de Super Saiyan. Cette transformation lui permet d'atteindre des niveaux de puissance inouïs, le rendant capable de combattre des ennemis d'une force extraordinaire.</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                        </ul>
+                        <div class="commentaire">
+                            <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                            <button type="submit" class="button">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="">
+                    <h2>Ajouter une carte</h2>
+                    <div class="description">
+                        <a href="#">
+                            <ion-icon name="add-circle"></ion-icon>
+                        </a>
+                    </div>
+                    <ul>
+                        <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                    </ul>
+                    <div class="commentaire">
+                        <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                        <button type="submit" class="button">Envoyer</button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+        <!-- Section Fairy Tail  -->
+        <div class="swiper mySwiper">
+            <h1>Fairy Tail</h1>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/fairytail/natsu.png" alt="">
+                        <h2>Natsu (Dragon Force)</h2>
+                        <div class="description">
+                            <p>Natsu, en mode Dragon Force, libère la puissance brute d'un Dragon Slayer, transformant son corps et ses flammes en un pouvoir draconique. Dans cet état, il peut rivaliser avec des dragons et des ennemis d'une puissance écrasante.</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                        </ul>
+                        <div class="commentaire">
+                            <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                            <button type="submit" class="button">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/fairytail/grey.png" alt="">
+                        <h2>Grey (Ice Devil Slayer Mode)</h2>
+                        <div class="description">
+                            <p>Grey utilise la magie d'Ice Devil Slayer, augmentant sa maîtrise de la glace à un niveau capable de détruire les démons. Ce mode lui confère une puissance glaciale ultime, capable d'annihiler ses ennemis démoniaques avec des attaques glacées dévastatrices.</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                        </ul>
+                        <div class="commentaire">
+                            <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                            <button type="submit" class="button">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/fairytail/erza.png" alt="">
+                        <h2>Erza (Armure de Nakagami)</h2>
+                        <div class="description">
+                            <p>Avec l'Armure de Nakagami, Erza défie les lois de la magie, ce qui lui permet de briser les barrières magiques les plus puissantes. Cette armure fait d'elle une combattante redoutable capable de vaincre les plus puissants mages de Fairy Tail.</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                        </ul>
+                        <div class="commentaire">
+                            <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                            <button type="submit" class="button">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="">
+                    <h2>Ajouter une carte</h2>
+                    <div class="description">
+                        <a href="#">
+                            <ion-icon name="add-circle"></ion-icon>
+                        </a>
+                    </div>
+                    <ul>
+                        <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                    </ul>
+                    <div class="commentaire">
+                        <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                        <button type="submit" class="button">Envoyer</button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+        <!-- Section Naruto  -->
+        <div class="swiper mySwiper">
+            <h1>Naruto</h1>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/naruto/naruto.png" alt="">
+                        <h2>Naruto (Mode Baryon)</h2>
+                        <div class="description">
+                            <p>En activant le Mode Baryon, Naruto fusionne son chakra avec celui de Kurama pour générer une énergie destructrice. Cette forme amplifie ses capacités physiques à un niveau extrême, lui permettant de rivaliser avec les adversaires les plus puissants, au prix de son énergie vitale.</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                        </ul>
+                        <div class="commentaire">
+                            <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                            <button type="submit" class="button">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/naruto/sasuk.png" alt="">
+                        <h2>Sasuke (Rinnegan)</h2>
+                        <div class="description">
+                            <p>Sasuke, avec son Rinnegan, accède à des capacités dimensionnelles uniques, telles que le déplacement à travers l'espace-temps et l'utilisation de techniques dévastatrices. Ce pouvoir lui permet de se battre contre les plus grandes menaces de l'univers shinobi.</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                        </ul>
+                        <div class="commentaire">
+                            <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                            <button type="submit" class="button">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/naruto/sakura.png" alt="">
+                        <h2>Sakura (Byakugō no Jutsu)</h2>
+                        <div class="description">
+                            <p>Sakura, avec le Byakugō no Jutsu activé, déverrouille une immense réserve de chakra qui améliore considérablement ses capacités physiques et de guérison. Dans cet état, elle devient capable de rivaliser avec des adversaires d'une force immense et de résister aux attaques les plus mortelles.</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                        </ul>
+                        <div class="commentaire">
+                            <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                            <button type="submit" class="button">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="">
+                    <h2>Ajouter une carte</h2>
+                    <div class="description">
+                        <a href="#">
+                            <ion-icon name="add-circle"></ion-icon>
+                        </a>
+                    </div>
+                    <ul>
+                        <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                    </ul>
+                    <div class="commentaire">
+                        <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                        <button type="submit" class="button">Envoyer</button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+
+
+        <!-- Section One Piece  -->
+        <div class="swiper mySwiper">
+            <h1>One Piece</h1>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/onepiece/gear5-luffy.jpg" alt="">
+                        <h2>Luffy (Gear 5)</h2>
+                        <div class="description">
+                            <p>Le Gear 5 de Luffy dévoile sa forme ultime, fusionnant puissance, liberté et créativité, lui permettant de déformer la réalité. Cette transformation lui confère une force divine et une imagination sans bornes pour affronter ses ennemis.</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                        </ul>
+                        <div class="commentaire">
+                            <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                            <button type="submit" class="button">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/onepiece/zoro.png" alt="">
+                        <h2>Zoro (Asura)</h2>
+                        <div class="description">
+                            <p>Zoro, dans son état Asura, libère une puissance immense en multipliant ses épées et en manifestant une forme d'épéiste redoutable. Ce mode lui permet d'atteindre des niveaux de force inégalés pour vaincre des adversaires puissants.</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                        </ul>
+                        <div class="commentaire">
+                            <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                            <button type="submit" class="button">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="img/onepiece/sanji.png" alt="">
+                        <h2>Sanji (Éveillé)</h2>
+                        <div class="description">
+                            <p>Lors de son combat contre Queen, Sanji éveille son exosquelette génétique, ce qui lui confère une force, une vitesse et une durabilité surhumaines. Libéré de ses limites humaines, il devient un combattant redoutable, capable de rivaliser avec des adversaires puissants.</p>
+                        </div>
+                        <ul>
+                            <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                            <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                        </ul>
+                        <div class="commentaire">
+                            <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                            <button type="submit" class="button">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x200" alt="">
+                    <h2>Ajouter une carte</h2>
+                    <div class="description">
+                        <a href="#">
+                            <ion-icon name="add-circle"></ion-icon>
+                        </a>
+                    </div>
+                    <ul>
+                        <li><a href="#"><ion-icon class="red" name="heart-circle"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="low-red" name="heart-dislike-circle"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon class="blue" name="share-social"></ion-icon></a></li>
+                    </ul>
+                    <div class="commentaire">
+                        <textarea name="" placeholder="Écrivez votre commentaire ici..." id="#"></textarea>
+                        <button type="submit" class="button">Envoyer</button>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 Wildine Dev. Tous droits réservés.</p>
+        </div>
+    </footer>    
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script module src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

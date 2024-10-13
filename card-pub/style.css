@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.carts {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 5px 5px 16px rgba(0, 0, 0, .4);
+}
+
+.card img {
+    width: 100%;
+}
+
+.content-card .color {
+    padding: 20px;
+    background-color: #0e3c78;
+}
+
+.content-card h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.content-card h2 {
+    color: #000;
+    font-size: 25px;
+}
+
+.card p {
+    color: #333;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+.contact .contact-me {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    background-color: #0e3c78;
+}
+
+.contact .contact-me:hover {
+    background-color: #094f9f;
+}
+
+.social-links {
+    display: flex;
+    margin-top: 15px;
+    list-style: none;
+    justify-content: center;
+}
+
+.social-links li ion-icon {
+    color: #000;
+    padding: 10px;
+    font-size: 35px;
+}
+
+.social-links  .fb ion-icon {
+    color: #3b5998;
+}
+
+.social-links  .git ion-icon {
+    color: #181717;
+}
+
+.social-links  .insta ion-icon {
+    color: #E4405F;
+}
+
+.social-links  .link ion-icon {
+    color: #0A66C2;
+}
+
+.social-links  .tik ion-icon {
+    color: #000000;
+}

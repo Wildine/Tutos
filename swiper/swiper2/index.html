@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+</head>
+
+<body>
+  <div id="corp">
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/dragonball/goku-ui.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/dragonball/vegeta.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/dragonball/gohan.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/fairytail/natsu.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/fairytail/grey.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/fairytail/erza.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/onepiece/gear5-luffy.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/onepiece/zoro.png" alt=""></div>
+        <div class="swiper-slide"><img src="img/onepiece/sanji.png" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section.show {
+    opacity: 1; 
+    transform: translateY(0);
+}
+
+/* Section d'Introduction  */
+.welcome {
+    width: 100%;
+    height: 100%;
+}
+
+.welcome img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.welcome .text {
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px 40px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 16px #f5f5f5;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.welcome .text h1 {
+    font-size: 50px;
+}
+
+.welcome .text p {
+    font-size: 30px;
+}
+
+/* Section a propos */
+.about {
+    padding: 20px 40px;
+}
+
+.content-about {
+    padding: 30px 40px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.content-about h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.content-about p {
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+
+/* Section d'explication */
+.exp {
+    padding: 20px 40px;
+}
+
+.exp .why {
+    padding: 30px 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 16px rgba(0, 0, 0, .5);
+}
+
+.exp .why h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.exp .why .sous-titre {
+    font-size: 30px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.why .icons {
+    /* font-size: 20px; */
+    padding: 0px 30px;
+    display: flex;
+    /* list-style: none; */
+    /* border: 1px solid #000; */
+}
+
+.why .icons li {
+    list-style: none;
+    padding: 5px 10px;
+}
+
+.why .icons li b {
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+}
+
+.why .icons li p {
+    font-size: 20px;
+    padding: 5px 20px;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.why .icons ion-icon {
+    width: 100%;
+    font-size: 60px;
+}
+
+.why .icons .globe {
+    color: #2C3E50;
+}
+
+.why .icons .shield {
+    color: #2E8B57;
+}
+
+.why .icons .time {
+    color: #4B4B4B;
+}
+
+.why .icons .megaphone {
+    color: #1E90FF;
+}
+
+.why .icons .settings {
+    color: #A9A9A9;
+}
+
+/* Section de services */
+.service {
+    padding: 20px 40px;
+}
+
+.service .serv {
+    padding: 30px 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 16px rgba(0, 0, 0, .5);
+}
+
+.service .serv h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.service .serv .sous-titre {
+    font-size: 30px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.serv .icons {
+    padding: 0px 30px;
+    display: flex;
+}
+
+.serv .icons li {
+    list-style: none;
+    padding: 5px 10px;
+}
+
+.serv .icons li b {
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+}
+
+.serv .icons li p {
+    font-size: 20px;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.serv .icons ion-icon {
+    width: 100%;
+    font-size: 60px;
+}
+
+.serv .icons .briefcase {
+    color: #333333;
+}
+
+.serv .icons .cart {
+    color: #1A1F71;
+}
+
+.serv .icons .trending {
+    color: #004d40;
+}
+
+.serv .icons .sync {
+    color: #808080;
+}
+
+/* Section des réalisations */
+
+/* Section de contact */
+.contact {
+    padding: 20px 40px;    
+}
+
+.content-contact {
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: #e3f2fd;
+    /* background-color: #2C3E50; */
+}
+
+.content-contact form {
+    width: 100%;
+    height: 600px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #e3f2fd; */
+}
+
+/* Formulaire place  */
+.content-contact .place {
+    width: 500px;
+    height: 560px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 16px rgba(0, 0, 0, .5);
+}
+
+.content-contact .place .icon h2 {
+    font-size: 30px;
+    text-align: center;
+    /* background-color: #fff; */
+}
+
+.content-contact .place img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.place .icon .social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.place .social-links a {
+    display: flex;
+    padding: 10px;
+}
+
+.place .icon .social-links a ion-icon {
+    padding: 5px;
+    color: #000;
+    font-size: 50px;
+    border-radius: 10px;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 16px rgba(0, 0, 0, .4);
+}
+
+/* Animation  */
+/* .social-links {
+    position: relative; 
+} */
+
+.social-links a {
+    position: relative; 
+}
+
+.social-links a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* Couleur de fond par défaut */
+    z-index: -1;
+    transition: width 0.4s ease, background-color 0.4s ease; /* Animation */
+    width: 0; /* Commence avec une largeur de 0 pour l'animation */
+}
+
+.social-links a:hover::before {
+    width: 100%;
+}
+
+.social-links .fb:hover::before {
+    background-color: #1877F2; /* Couleur de fond Facebook */
+}
+
+.social-links .inst:hover::before {
+    background-color: #E1306C; /* Couleur de fond Instagram */
+}
+
+.social-links .tw:hover::before {
+    background-color: #1DA1F2; /* Couleur de fond Twitter */
+}
+
+.social-links .tik:hover::before {
+    background-color: #010101; /* Couleur de fond TikTok */
+}
+
+.social-links .lin:hover::before {
+    background-color: #0A66C2; /* Couleur de fond LinkedIn */
+}
+
+.social-links .git:hover::before {
+    background-color: #181717; /* Couleur de fond GitHub */
+}
+
+
+
+/* .content-contact form h2 {
+    font-size: 30px;
+    background-color: green;
+} */
+
+/* Formulaire inputs  */
+.content-contact form .inputs {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 16px rgba(0, 0, 0, .4);
+}
+
+.content-contact .inputs h2 {
+    width: 100%;
+    padding: 10px;
+    font-size: 40px;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+form .inputs .button:hover {
+    background-color: #ad1457;
+}
+
+form .inputs input {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+form .inputs textarea {
+    width: 100%;
+    height: 250px;
+    max-height: 250px;
+    border: none;
+    outline: none;
+    max-width: 100%;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+form .inputs .button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: #c2185b;
+}

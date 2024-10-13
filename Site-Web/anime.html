@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .social-links li {
+            display: inline-block;
+            margin-right: 10px;
+            position: relative;
+        }
+        
+        .social-links li a {
+            display: inline-block;
+            font-size: 24px;
+            position: relative;
+            z-index: 1;
+            color: #000; /* Couleur par défaut des icônes */
+            transition: color 0.3s ease;
+        }
+        
+        .social-links li a:hover {
+            color: #fff; /* Couleur de l'icône lors du survol */
+        }
+        
+        .social-links li a::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: transparent; /* Couleur de fond par défaut */
+            z-index: -1;
+            transition: width 0.5s ease, background-color 0.5s ease;
+            width: 0;
+        }
+        
+        .social-links li a:hover::before {
+            width: 100%;
+            background-color: #1877F2; /* Facebook par exemple */
+        }
+        
+        .social-links li a:hover ion-icon[name="logo-facebook"]::before {
+            background-color: #1877F2; /* Facebook bleu */
+        }
+        
+        .social-links li a:hover ion-icon[name="logo-instagram"]::before {
+            background-color: #E1306C; /* Instagram rose */
+        }
+        
+        .social-links li a:hover ion-icon[name="logo-twitter"]::before {
+            background-color: #1DA1F2; /* Twitter bleu clair */
+        }
+        
+        .social-links li a:hover ion-icon[name="logo-tiktok"]::before {
+            background-color: #EE1D52; /* TikTok rouge */
+        }
+        
+        .social-links li a:hover ion-icon[name="logo-linkedin"]::before {
+            background-color: #0A66C2; /* LinkedIn bleu */
+        }
+        
+        .social-links li a:hover ion-icon[name="logo-github"]::before {
+            background-color: #181717; /* GitHub noir */
+        }
+    </style>
+    
+    <ul class="social-links">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+    </ul>
+    
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

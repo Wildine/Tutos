@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background: url('japan.png') no-repeat center/cover;
+}
+
+.sign-in {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in h2 {
+    color: #fff;
+    padding: 10px;
+    margin: 0 80px;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+form {
+    width: 400px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    backdrop-filter: blur(20px);
+    box-shadow: 5px 5px 16px #fff;
+}
+
+.inputs {
+    width: 100%;
+    padding: 40px;
+}
+
+.inputs .input {
+    margin: 15px 0;
+    position: relative;
+}
+
+.inputs .input ion-icon {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.input #togglePasswordIcon {
+    cursor: pointer;
+}
+
+.input input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 35px 0 20px;
+    border-radius: 8px;
+}
+
+.me {
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.me .check {
+    color: #000;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #000; */
+}
+
+.me .check input {
+    margin-right: 8px;
+}
+
+.me .passwd {
+    color: #fff;
+    font-size: 20px;
+    /* border: 1px solid #000; */
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: #fff;
+    display: flex;
+    margin: 20px 0;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.continue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    flex: 1;
+    border: none;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+}
+
+.continue span {
+    font-weight: 600;
+}
+
+/* Animation des differents icons  */
+.social-links {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 5px;
+}
+
+.social-links a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: width 0.4s ease, background-color 0.4s ease;
+    width: 0;
+}
+
+
+.social-links ion-icon {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    color: #000;
+    border-radius: 50%;
+    box-shadow: 5px 5px 16px rgba(0, 0, 0, .4);
+}
+
+.social-links a.fb:hover::before {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #3b5998;
+}
+
+.social-links a.git:hover::before {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #333;
+}
+
+.social-links a.inst:hover::before {
+    width: 100%;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134B8, #A02A68);
+}
+
+.social-links a.link:hover::before {
+    width: 100%;
+    border-radius: 8px;
+    background-color:  #0077B5;
+}
+
+.inputs .sign {
+    width: 100%;
+    font-size: 18px;
+}
+
+.inputs .sign a {
+    color: #fff;
+    margin: 0 5px;
+    font-size: 18px;
+}

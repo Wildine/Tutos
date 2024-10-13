@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign In</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        body {
+            background: url('japan.png') no-repeat center/cover;
+        }
+        
+        .sign-in {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .sign-in h2 {
+            color: #fff;
+            padding: 10px;
+            margin: 0 80px;
+            font-size: 40px;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
+            background-color: rgba(0, 0, 0, .3);
+        }
+        
+        form {
+            width: 400px;
+            border-radius: 8px;
+            backdrop-filter: blur(20px);
+            box-shadow: 5px 5px 16px #fff;
+        }
+        
+        .inputs {
+            width: 100%;
+            padding: 40px;
+        }
+        
+        .inputs .input {
+            margin: 15px 0;
+            position: relative;
+        }
+        
+        .inputs .input ion-icon {
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+        
+        .input input {
+            width: 100%;
+            height: 40px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            padding: 0 35px 0 20px;
+            border-radius: 8px;
+        }
+        
+        .me {
+            display: flex;
+            margin: 0 10px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .me .check {
+            color: #000;
+            display: flex;
+            align-items: center;
+            /* border: 1px solid #000; */
+        }
+        
+        .me .check input {
+            margin-right: 8px;
+        }
+        
+        .me .passwd {
+            color: #fff;
+            font-size: 20px;
+            /* border: 1px solid #000; */
+        }        
+        
+        .buttons {
+            margin: 20px 0;
+        }
+        
+        .buttons button {
+            width: 100%;
+            height: 40px;
+            border: none;
+            color: #fff;
+            display: flex;
+            margin: 10px 0;
+            font-size: 20px;
+            border-radius: 8px;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, .3);
+        }
+        
+        .continue {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .line {
+            flex: 1;
+            border: none;
+            margin: 0 10px;
+            border: 1px solid #ccc;
+        }
+        
+        .continue span {
+            font-weight: 600;
+        }
+        
+        /* Animation des differents icons  */
+        .social-links {
+            margin: 10px 0;
+            text-align: center;
+        }
+        
+        .social-links a {
+            margin: 0 5px;
+        }
+        
+        .social-links a::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* background-color: transparent; */
+            z-index: -1;
+            transition: width 0.4s ease, background-color 0.4s ease;
+            width: 0;
+        }
+        
+        
+        .social-links ion-icon {
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            color: #000;
+            border-radius: 50%;
+            box-shadow: 5px 5px 16px rgba(0, 0, 0, .4);
+        }
+        
+        /* Animation pour chaque icône avec leur couleur correspondante */
+        .social-links a.fb:hover::before {
+            width: 100%;
+            background-color: #3b5998;
+        }
+        
+        .social-links a.git:hover::before {
+            width: 100%;
+            background-color: #333;
+        }
+        
+        .social-links a.goo:hover::before {
+            width: 100%;
+            background: linear-gradient(90deg, #4285F4, #DB4437, #F4B400, #0F9D58);
+        }
+        
+        .social-links a.inst:hover::before {
+            width: 100%;
+            background: linear-gradient(45deg, #F58529, #DD2A7B, #8134B8, #A02A68);
+        }
+        
+        .inputs .sign {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sign-in">
+        <form action="">
+            <h2>Login</h2>
+            <div class="inputs">
+                <div class="input">
+                    <ion-icon name="mail"></ion-icon>
+                    <input type="text" placeholder="Email" required>
+                </div>
+                
+                <!-- <div class="input">
+                    <ion-icon id="togglePasswordIcon" name="eye-off"></ion-icon>
+                    <input type="password" id="password" placeholder="Password">
+                </div> -->
+
+                <div class="input">
+                    <ion-icon name="lock-closed"></ion-icon>
+                    <input type="password" id="password" placeholder="Mot de passe" required>
+                </div>
+                
+                <div class="input">
+                    <ion-icon name="lock-closed"></ion-icon>
+                    <input type="password" id="confirm-password" placeholder="Confirmer le mot de passe" required>
+                </div>
+
+                <div class="me">
+                    <div class="check">
+                        <input type="checkbox">Se souvenir
+                    </div>
+                    <a href="#" class="passwd">Mot de passe oublié</a>
+                </div>
+                
+                <!-- Message d'erreur -->
+                <p id="error-message" style="color: red; display: none;">Les mots de passe ne correspondent pas.</p>
+
+                <div class="buttons">
+                    <button type="submit" onclick="validatePassword()">Se connecter</button>
+                </div>
+
+                <div class="continue">
+                    <hr class="line">
+                    <span><i>Ou Continuer Avec</i></span>
+                    <hr class="line">
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="fb"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#" class="git"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="#" class="goo"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href="#" class="inst"><ion-icon name="logo-instagram"></ion-icon></a>
+                </div>
+
+                <p class="sign">Vous n'avez pas de compte ? <span><a href="#">Inscrivez vous</a></span></p>
+            </div>
+        </form>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script>
+        document.getElementById('togglePasswordIcon').addEventListener('click', function () {
+            const passwordInput = document.getElementById('password');
+            
+            // Change le type d'entrée entre password et text
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text'; // Affiche le mot de passe
+                this.setAttribute('name', 'eye'); // Change l'icône à "eye" (œil ouvert)
+            } else {
+                passwordInput.type = 'password'; // Cache le mot de passe
+                this.setAttribute('name', 'eye-off'); // Change l'icône à "eye-off" (œil fermé)
+            }
+        });
+        
+    </script>
+</body>
+</html>
